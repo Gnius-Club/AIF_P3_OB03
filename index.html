@@ -1,24 +1,249 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook - Sesión de Introducción 3: Tu Primera Creación con IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook - Sesión de Introducción 3: Tu Primera Creación con IA</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+            <div class="sidebar-info">
+                <p>💡 El ciclo completo "Idea > Plan > Código > Realidad" es el núcleo de esta sesión.</p>
+                <p>⏱️ Brain Spark es la actividad principal; asegúrate de dejar tiempo suficiente para ella.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Introductoria 3</h2>
+                <p class="overview-subtitle">Resumen de objetivos, materiales y preparación para el primer proyecto práctico.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Realizar el primer ciclo completo de Vibe Coding: idea -> plan (GCS) -> código.</li>
+                                        <li>Introducir el hardware principal (Micro:bit) y el software de programación (MakeCode).</li>
+                                        <li>Experimentar el rol de Xolo como traductor de ideas a un plan estructurado.</li>
+                                        <li>Lograr un primer "¡Funciona!" que conecte el mundo digital con el físico.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ Actividad 1: Conexión y Bienvenida</li>
+                                        <li>⚡ Actividad 2: I Can Statement: Nuestra Misión de Hoy</li>
+                                        <li>⚡ Actividad 3: AI GYM: Entrenando con Xolo</li>
+                                        <li>⚡ Actividad 4: Brain Spark: ¡Tu Idea Cobra Vida!</li>
+                                        <li>⚡ Actividad 5: Gnius STORM: Compartiendo la Creación</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa en <strong>MakeCode</strong> que se ejecuta en el <strong>Micro:bit</strong> y logra <strong>mostrar un icono simple</strong>.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Dispositivos para cada estudiante (con acceso a Xolo).</li>
+                                        <li>Acceso a la plataforma de programación <strong>MakeCode</strong>.</li>
+                                        <li>Hardware: <strong>Micro:bit</strong> con cable USB y batería (1 por cada 2 estudiantes).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li>Asegúrate de que todos los Micro:bits tengan carga y funcionen.</li>
+                                        <li>Ten un proyecto de ejemplo (un Micro:bit mostrando un icono) listo y funcional para la demostración.</li>
+                                        <li>Abre las pestañas de MakeCode y el chat de Xolo en tu dispositivo antes de empezar la clase.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                 <h2>⚡ Actividad 1: Conexión y Bienvenida ⏰ 3 minutos</h2>
+                <p>Iniciar la sesión, reconectar con los estudiantes y generar entusiasmo por la primera misión de construcción.</p>
+                 <div class="steps">
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: ¡Listos para crear! ⏰ 3 minutos</h3>
+                            <p>Da la bienvenida y establece la meta del día: pasar de ser usuarios a ser creadores por primera vez, usando la IA y un pequeño pero poderoso computador.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, equipo de inventores! 👋 En las sesiones pasadas preparamos nuestro taller, conocimos a nuestro copiloto Xolo y obtuvimos nuestros pasaportes. Hoy... ¡hoy es el día en que construimos algo por primera vez! Vamos a tomar una idea de nuestra imaginación y, con la ayuda de la IA, la traeremos al mundo real. ¿Están emocionados?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement: Nuestra Misión de Hoy ⏰ 5 minutos</h2>
+                <p>Presentar el objetivo claro y tangible de la clase, junto con el hardware y software que se utilizarán.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentando al Micro:bit ⏰ 2 minutos</h3>
+                            <p>Muestra un Micro:bit físico a la clase. Explica de forma muy simple qué es: "un pequeño cerebro programable con una pantalla de luces".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Este pequeño amigo es un <strong>Micro:bit</strong>. ¡No se dejen engañar por su tamaño! Es un computador súper poderoso, un pequeño 'cerebro' que podemos programar para que haga casi cualquier cosa. Tiene botones, sensores y, lo más importante para hoy, ¡esta pantalla de 25 luces LED que podemos controlar!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: La meta de la misión ⏰ 3 minutos</h3>
+                            <p>Muestra tu Micro:bit con el proyecto de ejemplo funcionando (mostrando un icono). Presenta formalmente el "I Can Statement" que conecta el hardware con el objetivo de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Miren el mío. (Muestra el Micro:bit mostrando un corazón o una carita feliz). Yo tuve una idea simple: "quiero que mi Micro:bit me salude con un corazón". Le pedí ayuda a Xolo para crear un plan, y luego traduje ese plan a código. ¡Y funcionó! Esa es exactamente nuestra misión hoy.</p>
+                                <p class="dialogue assistant">Al final de la clase, podrán decir con confianza: <strong>"Yo puedo decirle al Micro:bit que muestre un icono simple usando mi idea y la ayuda de la IA."</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM: Entrenando con Xolo ⏰ 7 minutos</h2>
+                <p>Guiar a los estudiantes para que utilicen a Xolo para obtener el conocimiento conceptual y el "plan" (GCS) necesarios.</p>
+                <div class="steps">
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Preguntándole al experto ⏰ 7 minutos</h3>
+                            <p>Indica a los alumnos que abran el chat con Xolo y le pidan que les enseñe sobre el Micro:bit y cómo se escribe un plan (GCS) para mostrar un icono.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Es hora de ir al A.I. GYM! 🧠💪 Abran su chat con Xolo. Vamos a pedirle que nos entrene. Escriban este comando, usando sus gustos:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">Mi perfil es [sus gustos] y quiero que me enseñes sobre el Micro:bit y cómo crear un plan para mostrar un icono de corazón.</pre>
+                                <p class="dialogue assistant">Xolo les explicará qué es el Micro:bit y les dará el 'plan' en un formato especial llamado GCS. Se verá algo así:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">AL INICIO:
+    // Esto mostrará un corazón
+    mostrar icono CORAZON</pre>
+                                <p class="dialogue assistant">Lean con atención su respuesta. ¡Ese es el plan secreto que vamos a construir!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark: ¡Tu Idea Cobra Vida! ⏰ 15 minutos</h2>
+                <p>La fase principal de construcción, donde los estudiantes traducen el plan de la IA en un proyecto funcional.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: ¡A construir! ⏰ 15 minutos</h3>
+                            <p>Guía a los estudiantes a través del ciclo de Vibe Coding: tomar el plan de Xolo, abrir MakeCode, traducir el GCS a bloques, probar en el simulador y finalmente descargar al Micro:bit físico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Manos a la obra, ingenieros! Ahora vamos a la plataforma <strong>MakeCode</strong>. (Proyecta la URL de MakeCode).
+                                <br>1. ¿Ven el plan que les dio Xolo? Dice 'AL INICIO'. En MakeCode, ya tenemos un bloque que dice 'al iniciar'. ¡Perfecto!
+                                <br>2. El plan luego dice 'mostrar icono CORAZON'. Vayan a la categoría 'Básico' en MakeCode. ¿Ven un bloque que se parece a eso? ¡Sí, 'mostrar icono'! Arrástrenlo dentro del bloque 'al iniciar'.
+                                <br>3. Hagan clic en el pequeño corazón del bloque para cambiar el icono si quieren.
+                                <br>4. Miren el simulador a la izquierda. ¡Su idea ya cobró vida digitalmente!
+                                <br>5. Ahora lo mejor: conecten su Micro:bit con el cable USB. Pongan un nombre a su proyecto, denle a 'Descargar' y sigan las instrucciones para arrastrar el archivo a su Micro:bit.
+                                <br>¡Observen cómo su idea se hace realidad en el mundo físico!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM: Compartiendo la Creación ⏰ 5 minutos</h2>
+                <p>Un momento para compartir los éxitos, reflexionar sobre el proceso y solidificar el aprendizaje.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Muestra y Cuenta ⏰ 3 minutos</h3>
+                            <p>Pide a algunos voluntarios que muestren su Micro:bit a la clase y expliquen su creación, describiendo su "idea" original y cómo se ve en el dispositivo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Increíble, creadores! Han completado su primera misión. ¿A quién le gustaría mostrar su creación a la clase? ¡Levanten su Micro:bit bien alto y cuéntennos qué "idea" tenían y qué icono crearon!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Reflexión Final ⏰ 2 minutos</h3>
+                            <p>Cierra la sesión conectando la experiencia con el objetivo. Haz preguntas reflexivas sobre el proceso de co-creación con la IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy han hecho algo asombroso. Han demostrado que pueden cumplir la misión. Todos pueden decir: <strong>"Yo puedo decirle al Micro:bit que muestre un icono simple usando mi idea y la ayuda de la IA."</strong> ¿Qué se sintió al ver que Xolo entendió su idea y les dio un plan? ¿Y qué tal la sensación de ver ese plan funcionar en un objeto real? ¡Ese es el poder de un creador de Gnius! ¡Felicidades!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
